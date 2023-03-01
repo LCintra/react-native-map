@@ -5,6 +5,7 @@ import MapViewDirections from 'react-native-maps-directions';
 import busIcon from './assets/bus.png'
 import { Image } from 'react-native';
 import * as Location from 'expo-location';
+import APIKEY from './consts/apikey';
 
 export default function App() {
   const screen = Dimensions.get('window');
@@ -45,7 +46,6 @@ export default function App() {
 
   const {currentCords, endCords} = cords
   const mapRef = useRef()
-  const APIKEY = 'AIzaSyCtj1Wugsn9J19BuOEIbgYbwT178rpDju8'
 
   useEffect(() => {
     (async () => {
